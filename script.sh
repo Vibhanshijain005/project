@@ -2,12 +2,12 @@ cd  /root/ansible
 
 docker build -t $JOB_NAME:$BUILD_ID .
 
-docker tag $JOB_NAME:$BUILD_ID jacksneel/$JOB_NAME:$BUILD_ID
+docker tag $JOB_NAME:$BUILD_ID vibhanshijain/$JOB_NAME:$BUILD_ID
 
-docker tag $JOB_NAME:$BUILD_ID jacksneel/$JOB_NAME:latest
+docker tag $JOB_NAME:$BUILD_ID  vibhanshijain/$JOB_NAME:latest
 
-docker push jacksneel/$JOB_NAME:$BUILD_ID
+docker push  vibhanshijain/$JOB_NAME:$BUILD_ID
 
-docker push jacksneel/$JOB_NAME:latest
+docker push  vibhanshijain/$JOB_NAME:latest
 
-docker rmi -f $JOB_NAME:$BUILD_ID jacksneel/$JOB_NAME:$BUILD_ID jacksneel/$JOB_NAME:latest
+docker rmi -f $JOB_NAME:$BUILD_ID  vibhanshijain/$JOB_NAME:$BUILD_ID  vibhanshijain/$JOB_NAME:latest
