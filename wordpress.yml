@@ -1,5 +1,5 @@
 - name: Test Docker container creation
-  hosts: docker
+  hosts: dockerrr
   tasks:
     - name: Run the Docker bulid
       shell: docker-compose -f /root/ansible/docker-compose.yml build --no-cache
